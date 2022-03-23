@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VR</title>
+    <!-- Подключаем стили проекта -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="icon" type="image/png" href="images/dest/ico.png">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header__logo"><img src="images/dest/logo.png" alt="" /></a>
+            <nav class="header__menu">
+                <ul>
+                    <li><a class="scroll" href="#main">Главная</a></li>
+                    <li><a class="scroll" href="#about">О нас</a></li>
+                    <li><a class="scroll" href="#price">Цены</a></li>
+                    <li><a class="scroll" href="#games">Игры</a></li>
+                    <li><a class="scroll" href="#contacts">Контакты</a></li>
+                    <li><a href="tel:7999999999">+7 (999) 999 99 99</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="main-screen" id="main">
+        <div class="container">
+            <div class="main-screen__title">Получите незабываемые впечатления с VR Lounge</div>
+            <div class="main-screen__text">Окунитесь в мир виртуальной реальноcти или проведите время за любимыми
+                настольными играми с друзьями</div>
+            <div class="main-screen__btn btn">Забронировать</div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__title title">О нас</div>
+            <div class="about__features">
+                <div class="about__item">
+                    <div class="about__img">
+                        <img src="images/dest/about_1.png" alt="" />
+                    </div>
+                    <div class="about__text">Более 30 VR игр разных жанров как для одного игрока, так и для команды
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__img">
+                        <img src="images/dest/about_2.png" alt="" />
+                    </div>
+                    <div class="about__text">20 настольных игр на любой вкус для опытных игроков и любителей</div>
+                </div>
+                <div class="about__item">
+                    <div class="about__img">
+                        <img src="images/dest/about_3.png" alt="" />
+                    </div>
+                    <div class="about__text">Оборудование нового поколения позволит полностью погрузиться в игровой мир
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__img">
+                        <img src="images/dest/about_4.png" alt="" />
+                    </div>
+                    <div class="about__text">Скидки в день рождения и после часа игры для максимальной выгоды</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price" id="price">
+        <div class="container">
+            <div class="price__title title">Цены</div>
+            <div class="price__tabs price-tabs">
+                <div class="price-tabs__link price-tabs__link-active">Аренда игр <span></span></div>
+                <div class="price-tabs__link price-tabs__link-place">Аренда помещения <span></span></div>
+            </div>
+            <div class="price-tabs__content">
+                <div class="price-tabs__item price-tabs__item-active">
+                    <div class="price-tabs__rent rent">
+                        <div class="rent__item">
+                            <div class="rent__wrapper">
+                                <div class="rent__title">VR игры</div>
+                                <div class="rent__sub">Цена за аренду одного шлема</div>
+                                <table class="rent__table">
+                                    <tr>
+                                        <th colspan="2">Время аренды</th>
+                                        <th>Пн-Пт</th>
+                                        <th>Сб-Вс</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">30 мин.</td>
+                                        <td>400 ₽</td>
+                                        <td>500 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">60 мин.</td>
+                                        <td>700 ₽</td>
+                                        <td>800 ₽</td>
+                                    </tr>
+                                </table>
+                                <div class="rent__btn btn">Забронировать</div>
+                            </div>
+                        </div>
+                        <div class="rent__item">
+                            <div class="rent__wrapper">
+                                <div class="rent__title">Настольные игры</div>
+                                <div class="rent__sub">Цена на одного человека</div>
+                                <table class="rent__table">
+                                    <tr>
+                                        <th colspan="2">Время аренды</th>
+                                        <th>Пн-Пт</th>
+                                        <th>Сб-Вс</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">30 мин.</td>
+                                        <td>70 ₽</td>
+                                        <td>90 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">60 мин.</td>
+                                        <td>100 ₽</td>
+                                        <td>130 ₽</td>
+                                    </tr>
+                                </table>
+                                <div class="rent__btn btn">Забронировать</div>
+                            </div>
+                        </div>
+                        <div class="rent__item">
+                            <div class="rent__wrapper">
+                                <div class="rent__title">Скидки</div>
+                                <table class="rent__table rent__table-specials">
+                                    <tr>
+                                        <td colspan="2">В день </td>
+                                        <td rowspan="2">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">рождения</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="50"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">После 60</td>
+                                        <td rowspan="2">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">минут игры</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-tabs__item">
+                    <div class="price-tabs__rent rent">
+                        <div class="rent__item rent__item-big">
+                            <div class="rent__wrapper">
+                                <div class="rent__title">Аренда помещений для проведения праздников и дней рождения
+                                </div>
+                                <div class="rent__sub">Цена за аренду помещения</div>
+                                <table class="rent__table">
+                                    <tr>
+                                        <th colspan="2">Время аренды</th>
+                                        <th>Пн-Пт</th>
+                                        <th>Сб-Вс</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">60 мин.</td>
+                                        <td>2000 ₽</td>
+                                        <td>2500 ₽</td>
+                                    </tr>
+                                </table>
+                                <div class="rent__btn btn">Забронировать</div>
+                            </div>
+                            <div class="rent__slider">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="games" id="games">
+        <div class="container">
+        <div class="games__title title">Наши игры</div>
+        <div class="games__sub">Игры для VR</div>
+            <div class="games__content">
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/vr/hf-alyx.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Half-life Alyx</div>
+                            <div class="games__genre">Шутер</div>
+                            <div class="games__info">Кол-во игроков: <span>1</span> </div>
+                            <div class="games__info">Возраст: <span>12+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/vr/beat.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Beat Saber</div>
+                            <div class="games__genre">Музыкальная</div>
+                            <div class="games__info">Кол-во игроков: <span>1</span> </div>
+                            <div class="games__info">Возраст: <span>12+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/vr/boneworks.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Boneworks</div>
+                            <div class="games__genre">Шутер</div>
+                            <div class="games__info">Кол-во игроков: <span>1-5</span> </div>
+                            <div class="games__info">Возраст: <span>16+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/vr/pistolwhip.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Pistol Whip</div>
+                            <div class="games__genre">Шутер</div>
+                            <div class="games__info">Кол-во игроков: <span>1-5</span> </div>
+                            <div class="games__info">Возраст: <span>16+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/vr/arizona.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Arizona Sunshine</div>
+                            <div class="games__genre">Шутер</div>
+                            <div class="games__info">Кол-во игроков: <span>1-5</span> </div>
+                            <div class="games__info">Возраст: <span>12+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/vr/thelab.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">The Lab</div>
+                            <div class="games__genre">Экшен</div>
+                            <div class="games__info">Кол-во игроков: <span>1</span> </div>
+                            <div class="games__info">Возраст: <span>12+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/vr/pavlov.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Pavlov VR</div>
+                            <div class="games__genre">Экшен</div>
+                            <div class="games__info">Кол-во игроков: <span>1</span> </div>
+                            <div class="games__info">Возраст: <span>12+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/vr/nomanssky.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">No Man’s Sky</div>
+                            <div class="games__genre">Приключения</div>
+                            <div class="games__info">Кол-во игроков: <span>1-5</span> </div>
+                            <div class="games__info">Возраст: <span>12+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__show btn">
+                    Смотреть все
+                </div>
+            </div>
+            <div class="games__sub">Настольные игры</div>
+            <div class="games__content">
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/board/bunker.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Бункер</div>
+                            <div class="games__genre">Ролевая</div>
+                            <div class="games__info">Кол-во игроков: <span>4-16</span> </div>
+                            <div class="games__info">Возраст: <span>18+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/board/monopoly.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Монополия</div>
+                            <div class="games__genre">Стратегия</div>
+                            <div class="games__info">Кол-во игроков: <span>2-6</span> </div>
+                            <div class="games__info">Возраст: <span>6+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/board/codenames.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Codenames</div>
+                            <div class="games__genre">Командная</div>
+                            <div class="games__info">Кол-во игроков: <span>2-8</span> </div>
+                            <div class="games__info">Возраст: <span>14+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/board/manchkin.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Манчкин</div>
+                            <div class="games__genre">Ролевая</div>
+                            <div class="games__info">Кол-во игроков: <span>2-6</span> </div>
+                            <div class="games__info">Возраст: <span>12+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/board/unicorn.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Неудержимые един...</div>
+                            <div class="games__genre">Ролевая</div>
+                            <div class="games__info">Кол-во игроков: <span>4-16</span> </div>
+                            <div class="games__info">Возраст: <span>18+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/board/gamesofthrones.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Игра престолов</div>
+                            <div class="games__genre">Стратегия</div>
+                            <div class="games__info">Кол-во игроков: <span>2-8</span> </div>
+                            <div class="games__info">Возраст: <span>18+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/board/jenga.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Jenga</div>
+                            <div class="games__genre">Пирамиды</div>
+                            <div class="games__info">Кол-во игроков: <span>2+</span> </div>
+                            <div class="games__info">Возраст: <span>4+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__item">
+                    <div class="games__wrapper">
+                        <div class="games__img">
+                            <img src="images/dest/games/board/gwint.png" alt="" />
+                        </div>
+                        <div class="games__description">
+                            <div class="games__name">Гвинт</div>
+                            <div class="games__genre">Карточная</div>
+                            <div class="games__info">Кол-во игроков: <span>2</span> </div>
+                            <div class="games__info">Возраст: <span>12+</span> </div>
+                            <div class="games__btn">
+                                <img src="images/dest/arrow.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__show btn">
+                    Смотреть все
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Подключаем скрипты проекта -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
