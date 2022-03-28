@@ -350,11 +350,11 @@ body.popup-show {
 .rent__item {
   flex: 0 0 33.333%;
   padding: 0 10px;
+  display: flex;
   transition: padding 0s, flex 1s, opacity 0.1s;
 }
 .rent__item-big {
   flex: 1 0 calc(100% - 20px);
-  display: flex;
   background: #f5f4f4;
   border-radius: 38px;
   padding: 45px 35px;
@@ -365,6 +365,7 @@ body.popup-show {
   flex: 0 0 530px;
   text-align: left;
   padding: 0;
+  transition: all 0s ease;
 }
 .rent__item-big .rent__table {
   padding-right: 90px;
@@ -379,7 +380,10 @@ body.popup-show {
   padding: 45px 35px;
   text-align: center;
   height: 100%;
-  transition: all 0s ease;
+  width: 100%;
+  min-width: 33.333%;
+  max-width: 530px;
+  transition: padding 0s, flex 0.9s;
 }
 .rent__title {
   font-family: Akrobat;
@@ -455,9 +459,21 @@ body.popup-show {
   flex: 1 1 930px;
   position: relative;
   max-width: 930px;
+  margin-top: -20px;
 }
 .rent-slider__item img {
   transition: all 0.3s ease;
+}
+.rent-slider .slick-list {
+  padding: 45px 0 !important;
+}
+.rent-slider .slick-prev {
+  left: 150px;
+}
+.rent-slider .slick-next {
+  transform: translateY(50%) rotate(180deg);
+  right: 150px;
+  left: 0;
 }
 
 .games {
@@ -503,6 +519,9 @@ body.popup-show {
   flex: 0 0 25%;
   padding: 10px;
 }
+.games__item:nth-child(n+9) {
+  display: none;
+}
 .games__wrapper {
   overflow: hidden;
   border-radius: 38px;
@@ -512,8 +531,12 @@ body.popup-show {
   padding: 20px 35px 45px;
   position: relative;
 }
+.games__img {
+  background-position: center;
+}
 .games__img img {
   display: block;
+  opacity: 0;
 }
 .games__name {
   font-family: Akrobat;
@@ -836,7 +859,6 @@ body.popup-show {
   overflow: hidden;
   display: block;
   margin: 0;
-  padding: 45px 0 !important;
 }
 .slick-list:focus {
   outline: none;
@@ -939,16 +961,6 @@ body.popup-show {
   filter: contrast(0.6);
 }
 
-.slick-prev {
-  left: 150px;
-}
-
-.slick-next {
-  transform: translateY(50%) rotate(180deg);
-  right: 150px;
-  left: 0;
-}
-
 .popup-game {
   position: fixed;
   left: 0;
@@ -1035,37 +1047,108 @@ body.popup-show {
   box-orient: vertical;
 }
 
-.gallery-popup {
+.gallery {
   display: flex;
   flex: 0 0 100%;
   max-width: 100%;
   overflow: hidden;
   margin: 0 -5px;
   position: relative;
+  cursor: pointer;
 }
-.gallery-popup__item {
+.gallery__item {
   padding: 0 5px;
   flex: 0 0 33.333%;
   position: relative;
 }
-.gallery-popup__item img,
-.gallery-popup__item video {
-  max-width: 100%;
-}
-.gallery-popup__item:before {
+.gallery__item.video:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.gallery-popup__more {
-  position: absolute;
-  right: 16%;
+  right: 0;
   top: 50%;
-  transform: translateX(50%);
+  margin: 0px auto;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #d80468;
+  background-image: url(../images/dest/games/play.png);
+  background-size: 17px;
+  background-position: 26px center;
+  background-repeat: no-repeat;
+}
+.gallery__item img,
+.gallery__item video {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.gallery__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0;
+  width: calc(100% - 10px);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.gallery__more {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 28px;
   font-weight: 700;
+  text-align: center;
+}
+
+.gallery-popup {
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.69);
+  left: 0;
+  top: 200%;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-popup .gallery__item:before,
+.gallery-popup .gallery__item .gallery__more {
+  display: none;
+}
+.gallery-popup-show {
+  top: 0;
+  opacity: 1;
+}
+.gallery-popup__wrapper {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-popup__close {
+  border-color: #fff;
+}
+.gallery-popup .slick-arrow {
+  filter: brightness(0) invert(1);
+}
+.gallery-popup .slick-next {
+  right: 10px;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.gallery-popup .slick-prev {
+  right: auto;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
 }
