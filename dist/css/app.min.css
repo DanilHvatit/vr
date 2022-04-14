@@ -111,6 +111,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:focus {
+  *outline: 0;
+}
+
 ul li {
   list-style: none;
 }
@@ -138,6 +142,7 @@ body.popup-show {
   transition: all 0.3s ease;
   position: relative;
   z-index: 3;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .btn a {
   color: inherit;
@@ -206,8 +211,8 @@ body.popup-show {
 .title {
   font-family: Akrobat;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 77px;
+  font-size: calc(50px + 16 * (100vw - 320px) / 1600);
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -398,21 +403,21 @@ body.popup-show {
 }
 
 .about {
-  margin-top: 160px;
+  padding-top: 160px;
 }
 @media (max-width: 991px) {
   .about {
-    margin-top: 120px;
+    padding-top: 120px;
   }
 }
 @media (max-width: 767px) {
   .about {
-    margin-top: 80px;
+    padding-top: 80px;
   }
 }
 @media (max-width: 479px) {
   .about {
-    margin-top: 15px;
+    padding-top: 15px;
   }
 }
 .about__features {
@@ -478,22 +483,21 @@ body.popup-show {
 }
 
 .price {
-  margin-top: 160px;
-  overflow-x: hidden;
+  padding-top: 160px;
 }
 @media (max-width: 991px) {
   .price {
-    margin-top: 120px;
+    padding-top: 120px;
   }
 }
 @media (max-width: 767px) {
   .price {
-    margin-top: 80px;
+    padding-top: 80px;
   }
 }
 @media (max-width: 479px) {
   .price {
-    margin-top: 40px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -658,7 +662,7 @@ body.popup-show {
   margin: 0 10px;
   max-width: 1600px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
   .rent__item-big {
     padding: 45px 15px;
   }
@@ -725,7 +729,7 @@ body.popup-show {
   max-width: 530px;
   transition: padding 0s, flex 1s;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
   .rent__wrapper {
     padding: 45px 15px;
   }
@@ -2221,4 +2225,39 @@ body.popup-show {
   left: 0;
   top: 30px;
   z-index: -1;
+}
+
+.rent-popup {
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: rgba(0, 0, 0, 0.69);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 200%;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.rent-popup-show {
+  opacity: 1;
+  top: 0;
+}
+.rent-popup__close {
+  border-color: #fff;
+  z-index: 10;
+  background-color: #181818;
+  right: 15px;
+}
+.rent-popup__wrapper {
+  max-width: 600px;
+  position: relative;
+  margin: 0px auto;
+  border-radius: 27px;
+  overflow: hidden;
+  padding: 60px 0 0;
+  background-color: #181818;
 }

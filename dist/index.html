@@ -39,7 +39,7 @@
             <div class="main-screen__title">Получите незабываемые впечатления с VR Lounge</div>
             <div class="main-screen__text">Окунитесь в мир виртуальной реальноcти или проведите время за любимыми
                 настольными играми с друзьями</div>
-            <div class="main-screen__btn btn"><a href="https://dikidi.net/#widget=78587">Забронировать</a></div>
+            <div class="main-screen__btn btn btn-rent">Забронировать</div>
         </div>
     </section>
 
@@ -108,7 +108,7 @@
                                         <td>800 ₽</td>
                                     </tr>
                                 </table>
-                                <div class="rent__btn btn"><a href="https://dikidi.net/#widget=78587">Забронировать</a>
+                                <div class="rent__btn btn btn-rent">Забронировать
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                                         <td>130 ₽</td>
                                     </tr>
                                 </table>
-                                <div class="rent__btn btn"><a href="https://dikidi.net/#widget=78587">Забронировать</a>
+                                <div class="rent__btn btn btn-rent">Забронировать
                                 </div>
                             </div>
                         </div>
@@ -184,7 +184,7 @@
                                         <td>2500 ₽</td>
                                     </tr>
                                 </table>
-                                <div class="rent__btn btn"><a href="https://dikidi.net/#widget=78587">Забронировать</a>
+                                <div class="rent__btn btn btn-rent">Забронировать
                                 </div>
                             </div>
                             <div class="rent__slider rent-slider">
@@ -282,7 +282,7 @@
     </section>
 
     <section class="map" id="YMapsID"></section>
- 
+
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -374,7 +374,17 @@
             <div class="form-popup__title">Спасибо за заявку!</div>
             <div class="form-popup__text">Наш менеджер свяжется с вами в ближайшее время.</div>
         </div>
-    </div> 
+    </div>
+
+    <div class="rent-popup">
+        <div class="rent-popup__wrapper">
+            <div class="rent-popup__close close">
+                <img src="images/dest/close-white.svg" alt="" />
+            </div>
+            <iframe src="https://units.easyweek.io/vr-lounge" style="border: 0; max-width: 100%;" frameborder="0"
+                width="550" height="600"></iframe>
+        </div>
+    </div>
 
 
     <!-- Подключаем скрипты проекта -->
@@ -402,7 +412,7 @@
             myMap.geoObjects.add(myGeoObject);
             myGeoObject.balloon.open();
             myMap.behaviors.disable('scrollZoom');
-            if($(window).width() <= '768') {
+            if ($(window).width() <= '768') {
                 myMap.behaviors.disable('drag');
             }
         }
